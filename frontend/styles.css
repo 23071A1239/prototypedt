@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://media.istockphoto.com/id/2149219718/photo/3d-render-of-cafe-restaurant-interior.webp?a=1&b=1&s=612x612&w=0&k=20&c=7s7SMQ4OqEX8QaXMqzd1Fus-hjcTa-dqmUggLP5GSZA=');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #333;  /* Dark text color */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+/* Home Button */
+#homeButton {
+    background-color: #808080; /* Monochrome gray */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#homeButton:hover {
+    background-color: #666666; /* Darker gray */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    z-index: 1;
+}
+
+/* Search Bar */
+#restaurant-search {
+    background-color: rgba(255, 255, 255, 0.9); /* White background without translucency */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#restaurant-search select {
+    padding: 10px;
+    font-size: 1.2em;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 80%;
+    background-color: #f2f2f2; /* Light gray background for select */
+    border: 1px solid #ccc;
+}
+
+/* View Details Button */
+#viewDetailsButton {
+    background-color: #b3b3b3; /* Light gray */
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#viewDetailsButton:hover {
+    background-color: #999999; /* Darker gray */
+}
+
+/* Restaurant Details */
+#restaurant-details {
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* White background without translucency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#restaurant-info {
+    font-size: 1.2em;
+    color: #444;
+}
+
+/* Seat Availability */
+#seat-availability {
+    margin-top: 20px;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#seats-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 10px;
+}
+
+.seat-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seat-box.available {
+    background-color: #4CAF50; /* Green for available */
+}
+
+.seat-box.booked {
+    background-color: #F44336; /* Red for booked */
+}
+
+/* Booking Form */
+#booking {
+    margin-top: 20px;
+    background-color: #e6e6e6; /* Light gray */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#booking input {
+    padding: 10px;
+    font-size: 1.2em;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9; /* Light gray input */
+}
+
+/* Submit Button */
+#booking button {
+    background-color: #808080; /* Gray */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#booking button:hover {
+    background-color: #666666; /* Darker gray */
+}

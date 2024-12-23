@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Seat Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <h1>Restaurant Seat Management</h1>
+            <button id="homeButton">Home</button>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Search Restaurant -->
+        <div id="restaurant-search">
+            <label for="restaurantDropdown">Search for Restaurants:</label>
+            <select id="restaurantDropdown">
+                <option value="" disabled selected>Select a restaurant</option>
+                <!-- Populate dynamically with JavaScript -->
+            </select>
+            <button id="viewDetailsButton">View Details</button>
+        </div>
+
+        <!-- Restaurant Details Section -->
+        <div id="restaurant-details" style="display:none;">
+            <h2>Restaurant Details</h2>
+            <div id="restaurant-info">
+                <!-- Populated dynamically -->
+            </div>
+
+            <!-- Seat Availability -->
+            <div id="seat-availability">
+                <h3>Seat Availability</h3>
+                <div id="seats-grid"></div>
+            </div>
+
+            <!-- Booking Section -->
+            <div id="booking">
+                <h3>Book Your Seat</h3>
+                <form id="booking-form">
+                    <label for="customerName">Your Name:</label>
+                    <input type="text" id="customerName" required>
+                    <label for="reservationTime">Reservation Time:</label>
+                    <input type="datetime-local" id="reservationTime" required>
+                    <button type="submit">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
